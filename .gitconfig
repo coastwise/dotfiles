@@ -1,3 +1,14 @@
 [user]
-	name = John Piasetzki
-	email = John.Piasetzki@gmail.com
+	name = Patrick McKenna
+	email = patrick.a.mckenna@gmail.com
+[color]
+	ui = true
+	branch = true
+	diff = true
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[merge]
+	tool = opendiff
+[mergetool]
+	keepBackup = false
+
