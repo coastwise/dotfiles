@@ -1,4 +1,5 @@
-export PATH=~/dev/android-sdk/platform-tools:$PATH
+# add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH";
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
@@ -7,4 +8,3 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
   fi
 
 PS1="\u@\h:\W\e[0;32m\$(__git_ps1)\e[m > "
-
