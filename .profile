@@ -7,4 +7,6 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
     . `brew --prefix`/etc/bash_completion
   fi
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 PS1="\u@\h:\W\e[0;32m\$(__git_ps1)\e[m > "
