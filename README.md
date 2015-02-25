@@ -1,16 +1,11 @@
-# John Piasetzki’s dotfiles
+# Patrick McKenna’s dotfiles
 
 ## Installation
 
 ```
-git clone https://github.com/jpiasetz/dotfiles.git ~/.dotfiles
-cd .dotfiles
-cp post-commit ./git/hooks/
+git clone https://github.com/coastwise/dotfiles
+cd dotfiles
+source install-dotfiles.sh
 ```
 
-Edit the README.md with your name and modify or copy the dotfiles as need.
-
-``` git commit -m "Do the magic!" ```
-
-The post-commit hook will link all the hidden dotfiles in this directory from your home directory.
-
+Edit the README.md with your name and modify or copy the dotfiles as needed.
