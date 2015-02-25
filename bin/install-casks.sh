@@ -13,6 +13,7 @@ brew cask install sourcetree
 brew cask install sublime-text3
 brew cask install eclipse-java
 brew cask install unity
+brew cask install openscad
 
 brew cask install hipchat
 brew cask install skype
