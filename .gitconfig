@@ -1,14 +1,18 @@
 [user]
 	name = Patrick McKenna
 	email = patrick.a.mckenna@gmail.com
+[core]
+	excludesfile = $HOME/.gitignore_global
 [color]
 	ui = true
 	branch = true
 	diff = true
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	clone = clone --recursive
 [merge]
 	tool = opendiff
 [mergetool]
 	keepBackup = false
-
+[push]
+	default = simple
