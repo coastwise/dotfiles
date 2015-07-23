@@ -1,0 +1,8 @@
+0.0.0.0	reddit.com
+::	reddit.com
+0.0.0.0	www.reddit.com
+::	www.reddit.com
+0.0.0.0	news.ycombinator.com
+::	news.ycombinator.com
+0.0.0.0	www.news.ycombinator.com
+::	www.news.ycombinator.com

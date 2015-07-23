@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ $# -gt 0 ] && [ "$1" == "off" ]; then
+	sed '/BEGIN WORKMODE/,/END WORKMODE/d' /private/etc/hosts > temphosts
+	cat temphosts > /private/etc/hosts
+else
+	echo '# BEGIN WORKMODE BLACKLIST' >> /private/etc/hosts
+	cat workmode_blacklist.txt >> /private/etc/hosts
+	echo '# END WORKMODE BLACKLIST' >> /private/etc/hosts
+fi
