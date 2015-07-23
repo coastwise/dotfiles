@@ -12,3 +12,4 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 PS1="\u@\h:\W\e[0;32m\$(__git_ps1)\e[m > "
 
 alias git=hub
+eval "$(thefuck-alias)"
