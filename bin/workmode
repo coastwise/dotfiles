@@ -5,6 +5,6 @@ if [ $# -gt 0 ] && [ "$1" == "off" ]; then
 	cat temphosts > /private/etc/hosts
 else
 	echo '# BEGIN WORKMODE BLACKLIST' >> /private/etc/hosts
-	cat workmode_blacklist.txt >> /private/etc/hosts
+	cat $(dirname $0)/workmode_blacklist.txt >> /private/etc/hosts
 	echo '# END WORKMODE BLACKLIST' >> /private/etc/hosts
 fi
