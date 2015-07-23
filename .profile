@@ -9,7 +9,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-PS1="\u@\h:\W\e[0;32m\$(__git_ps1)\e[m > "
+# Prompt
+export PS1="\u@\h:\W\e[0;32m\$(__git_ps1)\e[m > "
+export PS1="!\! $PS1" # prepend history line number
 
 alias git=hub
 eval "$(thefuck-alias)"
