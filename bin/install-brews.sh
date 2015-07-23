@@ -5,4 +5,5 @@ brew install hub
 brew install wget
 brew install maven
 brew install python
+brew install cloc
 brew install thefuck
