@@ -11,8 +11,11 @@ fi
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Prompt
-export PS1="\u@\h:\w\e[0;32m\$(__git_ps1)\e[m > "
-export PS1="!\! $PS1" # prepend history line number
+ HISTLINE="!\!"
+     USER="\u@\h"
+  WORKDIR="\w"
+GITBRANCH="\e[0;32m$(__git_ps1)\e[m" # includes leading space
+export PS1="$HISTLINE $USER:$WORKDIR$GITBRANCH > "
 
 alias git=hub
 eval "$(thefuck-alias)"
